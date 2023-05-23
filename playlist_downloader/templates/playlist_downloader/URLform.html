@@ -1,0 +1,11 @@
+{% extends 'playlist_downloader/index.html' %}
+
+{% block URLform %}
+<form method = "post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type = "submit", name = "submit">
+       initiate
+    </button>
+</form>
+{% endblock %}

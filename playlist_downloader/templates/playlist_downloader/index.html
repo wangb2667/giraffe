@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: comic sans ms, cursive;
+		background-color:aquamarine;
+		text-align: center;
+	}
+
+	header {
+ 		background-color: aqua;
+ 		width: 100;
+ 		border: 5px solid green;
+ 		padding: 1px;
+		color:blue;
+		font-family: comic sans ms, cursive;
+		font-size: 60px;
+		text-align: center;
+	}
+	
+	button {
+		margin: 5px;
+		padding: 5px;
+		background-color: #4CAF50;
+	 	font-family: comic sans ms, cursive;
+		font-size: 30px;
+		text-align: center;
+	}
+	
+	image {
+		position: absolute;
+		bottom: 0;
+	}
+	.sidebar {
+ 		margin: 0;
+ 		padding: 0;
+  		width: 100%;
+ 		background-color: #f1f1f1;
+  		position: fixed;
+ 		height: 50px;
+ 		overflow: absolute;  display: flex;
+	}
+
+	.sidebar a {
+	  	display: block;
+	  	color: black;
+ 	  	padding: 16px;
+ 	 	text-decoration: none;
+	}
+ 
+	.sidebar a.active {
+  		background-color: #04AA6D;
+  		color: white;
+	}
+
+	.sidebar a:hover:not(.active) {
+  		background-color: #555;
+  		color: white;
+	}
+
+
+</style>
+
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a onclick="window.location.href='aboutus.html';">About Us</a>
+  <a onclick="window.location.href='https://docs.google.com/document/d/1H4LUsM8BuMceSRC9z1CAQEzXqVyPyfZfjNhQmIsGTSg/edit?usp=sharing';">User Manual</a>
+  <a onclick="window.location.href='https://docs.google.com/document/d/1FWB1MQkqW_yEUJ3axV8-Mz3l4IQrVbexVMWXwz2spXA/edit?usp=sharing';">Project Design</a>
+</div>
+
+
+<br><br><br>
+<header><strong>Spotify Downloader</strong></header>
+<br>
+<marquee behavior="scroll" direction="right">
+	<img 
+		src="https://static.wikia.nocookie.net/p__/images/f/fa/The_Pirate_Captain_1.webp/revision/latest?cb=20220427191430&path-prefix=protagonist"
+		width="330"
+		height="150"
+		margin-left: auto;
+	/>
+</marquee>
+<br>
+
+<button>Download Song!</button>
+
+<button>Download Playlist!</button>
+
+{% block URLform %}
+{% endblock %}
+
+</html>
+
